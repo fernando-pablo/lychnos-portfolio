@@ -54,14 +54,14 @@ export const projetos: Projeto[] = [
     // linkAoVivo: "https://...",
   },
   {
-    nome: "Clínica Vida Plena",
+    nome: "Modelo de site para clínicas",
     problema:
-      "Clínicas e consultórios perdem pacientes por não aparecerem no Google e por dificultarem o contato.",
+      "Clínicas e consultórios perdem pacientes por não aparecerem no Google e por dificultarem o agendamento.",
     solucao:
-      "Modelo de site institucional para clínicas: rápido, pensado para o celular, otimizado para buscas locais e com agendamento direto pelo WhatsApp. Todo o conteúdo fica em um único arquivo, então pode ser adaptado para um novo cliente em pouco tempo.",
+      "Site modelo que se adapta a clínica médica, odontologia, psicologia e estética. Mostra a equipe por especialidade, os próximos horários livres e um agendamento por horário, com convênio, que envia o pedido pronto para o WhatsApp da recepção.",
     tecnologias: ["Next.js", "TypeScript", "Tailwind CSS", "SEO"],
-    // imagem: "/projetos/clinica.jpg",
-    // linkAoVivo: "https://...",
+    imagem: "/projetos/clinica.jpg",
+    linkAoVivo: "https://modelo-site-clinicas.vercel.app",
   },
 ];
 
@@ -111,6 +111,7 @@ export const tecnologias = [
   "Supabase",
   "Tailwind CSS",
   "Vite",
-  "PWA e notificações push",
+  "PWA",
+  "Notificações push",
   "Bancos de dados",
 ];
