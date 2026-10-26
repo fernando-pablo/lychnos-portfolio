@@ -31,6 +31,8 @@ export type Projeto = {
   imagem?: string;
   linkAoVivo?: string;
   linkCodigo?: string;
+  // Aviso para projetos privados (sem link público), ex: "Projeto privado, em uso pela igreja"
+  selo?: string;
 };
 
 export const projetos: Projeto[] = [
@@ -42,17 +44,18 @@ export const projetos: Projeto[] = [
       "Aplicativo PWA instalável no celular com o calendário do ano, aniversariantes, compromissos pessoais com lembrete e notificações push enviadas mesmo com o app fechado. Inclui painel administrativo para cadastros, destaques e avisos oficiais.",
     tecnologias: ["React", "PWA", "Supabase", "Edge Functions", "Notificações push"],
     imagem: "/projetos/pib-2026.jpg",
-    linkAoVivo: "https://pib-2026.vercel.app",
+    // Sem link público: o app é real e guarda dados dos membros.
+    selo: "Projeto privado, em uso pela Primeira Igreja Batista em Jaíba. Demonstração disponível sob pedido.",
   },
   {
     nome: "CheckPro 2.0",
     problema:
       "Inspeções industriais feitas em formulários de papel não deixavam histórico e atrasavam a identificação de falhas.",
     solucao:
-      "Sistema de checklist digital por setor e equipamento, com perfis de gestor, PCM e eletricista. Compara as medições com os limites técnicos, gera não conformidades automaticamente e exporta relatórios para Excel.",
-    tecnologias: ["React", "Vite", "JavaScript", "SheetJS (Excel)"],
+      "Sistema de checklist digital com perfis de gestor, PCM e eletricista. Compara as medições com os limites técnicos, gera não conformidades com foto automaticamente, mostra gráficos de conformidade e temperatura e emite relatórios em PDF e Excel. Entre na demonstração com um clique.",
+    tecnologias: ["React", "Vite", "React Router", "Gráficos SVG", "SheetJS (Excel)"],
     imagem: "/projetos/checkpro.jpg",
-    // linkAoVivo: "https://...",
+    linkAoVivo: "https://checkpro-demo.vercel.app",
   },
   {
     nome: "Modelo de site para clínicas",
