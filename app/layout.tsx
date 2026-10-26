@@ -1,25 +1,28 @@
 import type { Metadata } from "next";
-import { Sora, Figtree } from "next/font/google";
+import { Michroma, Manrope } from "next/font/google";
 import "./globals.css";
 
-const sora = Sora({ subsets: ["latin"], variable: "--font-display", display: "swap" });
-const figtree = Figtree({ subsets: ["latin"], variable: "--font-body", display: "swap" });
+// Michroma: letras largas e futuristas, como as do logo. Usada só na marca e em títulos curtos.
+const michroma = Michroma({ subsets: ["latin"], weight: "400", variable: "--font-display", display: "swap" });
+// Manrope: texto corrido, limpo e legível.
+const manrope = Manrope({ subsets: ["latin"], variable: "--font-body", display: "swap" });
 
 export const metadata: Metadata = {
   title: "Lychnos Tech | Sites, sistemas web e automações",
   description:
     "Fernando Pablo, desenvolvedor full stack e fundador da Lychnos Tech. Sites, sistemas web e automações sob medida com React, Next.js e Node.js.",
   openGraph: {
-    title: "Lychnos Tech | Sites, sistemas web e automações",
-    description: "Tiro ideias do papel com sites, sistemas web e automações sob medida.",
+    title: "Lychnos Tech | Tecnologia que ilumina ideias e transforma processos",
+    description: "Sites, sistemas web e automações sob medida.",
     locale: "pt_BR",
     type: "website",
+    images: ["/marca/lamparina-3d.jpg"],
   },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="pt-BR" className={`${sora.variable} ${figtree.variable}`}>
+    <html lang="pt-BR" className={`${michroma.variable} ${manrope.variable}`}>
       <body>{children}</body>
     </html>
   );

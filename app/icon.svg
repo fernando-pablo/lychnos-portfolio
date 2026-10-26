@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="aco" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4f7fb"/><stop offset=".35" stop-color="#b9c3cf"/>
+      <stop offset=".5" stop-color="#6f7a89"/><stop offset=".68" stop-color="#dfe5ec"/><stop offset="1" stop-color="#8994a3"/>
+    </linearGradient>
+    <linearGradient id="acoV" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eef2f7"/><stop offset=".55" stop-color="#9aa5b3"/><stop offset="1" stop-color="#5d6877"/>
+    </linearGradient>
+    <linearGradient id="arco" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#cfd7e1"/><stop offset=".5" stop-color="#7d8898"/><stop offset="1" stop-color="#4ea8ff"/>
+    </linearGradient>
+    <radialGradient id="chama" cx=".45" cy=".8" r=".75">
+      <stop offset="0" stop-color="#fff6dc"/><stop offset=".35" stop-color="#ffd27a"/><stop offset=".75" stop-color="#f5a524"/><stop offset="1" stop-color="#c26a10"/>
+    </radialGradient>
+  </defs>
+  <!-- arcos -->
+  <path d="M40 86 A38 38 0 0 1 40 18" fill="none" stroke="url(#arco)" stroke-width="3.2" stroke-linecap="round"/>
+  <path d="M80 18 A38 38 0 0 1 80 86" fill="none" stroke="url(#arco)" stroke-width="3.2" stroke-linecap="round"/>
+  <!-- pilar -->
+  <path d="M47 14 L57 8 L57 70 L47 70 Z" fill="url(#aco)"/>
+  <path d="M57 8 L60 10 L60 70 L57 70 Z" fill="#5f6a79"/>
+  <!-- chama: lâmina metálica + fogo -->
+  <path d="M60 18 C70 26 81 40 78 54 C76 63 68 69 60 70 Z" fill="url(#acoV)"/>
+  <path d="M60 18 C70 26 81 40 78 54 C77 58 75 61 72 64 C75 52 70 38 60 30 Z" fill="#eef2f7" opacity=".55"/>
+  <path d="M60 38 C64 46 72 52 70 60 C69 65 65 68 60 69 Z" fill="url(#chama)"/>
+  <!-- base -->
+  <path d="M42 70 L78 70 L73 76 L47 76 Z" fill="url(#aco)"/>
+  <path d="M46 79 L74 79 L72 83 L48 83 Z" fill="url(#acoV)"/>
+  <path d="M49 86 L71 86 L69 90 L51 90 Z" fill="url(#acoV)"/>
+  <path d="M52 93 L68 93 L66 97 L54 97 Z" fill="url(#acoV)"/>
+  <path d="M55 99 L65 99 C64 103 56 103 55 99 Z" fill="url(#chama)"/>
+</svg>

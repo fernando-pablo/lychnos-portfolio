@@ -16,6 +16,7 @@ export const site = {
   linkedin: "https://www.linkedin.com/in/fernandopablogomes",
   github: "https://github.com/fernando-pablo",
 
+  slogan: "Tecnologia que ilumina ideias e transforma processos",
   titulo: "Tiro ideias do papel com sites, sistemas web e automações sob medida.",
   apresentacao:
     "Sou Fernando Pablo, desenvolvedor full stack e fundador da Lychnos Tech. Crio soluções que organizam processos e economizam tempo para empresas, instituições e empreendedores de todo o Brasil.",
