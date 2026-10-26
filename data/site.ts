@@ -40,7 +40,7 @@ export const projetos: Projeto[] = [
     solucao:
       "Aplicativo PWA instalável no celular com o calendário do ano, aniversariantes, compromissos pessoais com lembrete e notificações push enviadas mesmo com o app fechado. Inclui painel administrativo para cadastros, destaques e avisos oficiais.",
     tecnologias: ["React", "PWA", "Supabase", "Edge Functions", "Notificações push"],
-    // imagem: "/projetos/pib-2026.jpg",
+    imagem: "/projetos/pib-2026.jpg",
     linkAoVivo: "https://pib-2026.vercel.app",
   },
   {
