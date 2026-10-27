@@ -39,15 +39,15 @@ export type Projeto = {
 
 export const projetos: Projeto[] = [
   {
-    nome: "PIB 2026: calendário da igreja",
+    nome: "Calendário digital para igrejas",
     problema:
-      "A programação anual da igreja ficava espalhada em avisos e grupos, e os membros perdiam eventos importantes.",
+      "A programação da igreja ficava espalhada em avisos e grupos, e os membros perdiam eventos importantes.",
     solucao:
-      "Aplicativo PWA instalável no celular com o calendário do ano, aniversariantes, compromissos pessoais com lembrete e notificações push enviadas mesmo com o app fechado. Inclui painel administrativo para cadastros, destaques e avisos oficiais.",
-    tecnologias: ["React", "PWA", "Supabase", "Edge Functions", "Notificações push"],
-    imagem: "/projetos/pib-2026.jpg",
-    // O app real é privado (guarda dados dos membros). O link abre uma cópia de demonstração com dados fictícios.
-    selo: "O app real é privado, em uso pela Primeira Igreja Batista em Jaíba. A demonstração usa uma igreja e dados fictícios.",
+      "App instalável no celular com calendário, aniversariantes, lembretes e avisos por notificação, além de painel administrativo. Já em uso real pela Primeira Igreja Batista em Jaíba.",
+    tecnologias: ["React", "PWA", "Supabase", "Notificações push"],
+    imagem: "/projetos/calendario-demo.jpg",
+    // O app da igreja é privado; o link abre a demonstração com dados fictícios.
+    selo: "Demonstração com dados fictícios. O app original é privado.",
     linkAoVivo: "https://calendario-igreja-demo-un3i.vercel.app",
     rotuloLink: "Ver demonstração",
   },

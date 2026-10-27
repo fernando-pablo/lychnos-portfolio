@@ -279,6 +279,9 @@ p { margin: 0; }
   color: #cfd7e1; background: rgba(255, 255, 255, 0.03); box-shadow: inset 0 0 0 1px var(--borda);
 }
 .projeto-links { display: flex; flex-wrap: wrap; gap: 0.7rem; margin-top: 1.5rem; }
+.projeto-selo { margin-top: 1rem; font-size: 0.8rem; color: var(--texto-3); }
+.projeto-selo::before { content: ""; display: inline-block; width: 6px; height: 6px; margin-right: 0.5rem; border-radius: 50%; background: var(--ambar-claro); vertical-align: middle; }
+
 
 /* ---------- Serviços ---------- */
 .servicos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-top: 3.5rem; }
