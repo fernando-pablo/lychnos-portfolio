@@ -110,11 +110,17 @@ export default function Home() {
                     <ul className="etiquetas" aria-label="Tecnologias usadas">
                       {p.tecnologias.map((t) => <li key={t}>{t}</li>)}
                     </ul>
+                    {p.selo && (
+                      <p className="projeto-selo">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2" /><path d="M8 11V8a4 4 0 0 1 8 0v3" /></svg>
+                        {p.selo}
+                      </p>
+                    )}
                     {(p.linkAoVivo || p.linkCodigo) && (
                       <div className="projeto-links">
                         {p.linkAoVivo && (
                           <a className="botao botao-pequeno" href={p.linkAoVivo} target="_blank" rel="noopener noreferrer">
-                            Abrir o projeto
+                            {p.rotuloLink ?? "Abrir o projeto"}
                           </a>
                         )}
                         {p.linkCodigo && (

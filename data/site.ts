@@ -31,8 +31,10 @@ export type Projeto = {
   imagem?: string;
   linkAoVivo?: string;
   linkCodigo?: string;
-  // Aviso para projetos privados (sem link público), ex: "Projeto privado, em uso pela igreja"
+  // Aviso para projetos privados, ex: "Projeto privado, em uso pela igreja"
   selo?: string;
+  // Texto do botão do link (padrão: "Abrir o projeto")
+  rotuloLink?: string;
 };
 
 export const projetos: Projeto[] = [
@@ -44,8 +46,10 @@ export const projetos: Projeto[] = [
       "Aplicativo PWA instalável no celular com o calendário do ano, aniversariantes, compromissos pessoais com lembrete e notificações push enviadas mesmo com o app fechado. Inclui painel administrativo para cadastros, destaques e avisos oficiais.",
     tecnologias: ["React", "PWA", "Supabase", "Edge Functions", "Notificações push"],
     imagem: "/projetos/pib-2026.jpg",
-    // Sem link público: o app é real e guarda dados dos membros.
-    selo: "Projeto privado, em uso pela Primeira Igreja Batista em Jaíba. Demonstração disponível sob pedido.",
+    // O app real é privado (guarda dados dos membros). O link abre uma cópia de demonstração com dados fictícios.
+    selo: "O app real é privado, em uso pela Primeira Igreja Batista em Jaíba. A demonstração usa uma igreja e dados fictícios.",
+    linkAoVivo: "https://calendario-igreja-demo-un3i.vercel.app",
+    rotuloLink: "Ver demonstração",
   },
   {
     nome: "CheckPro 2.0",
