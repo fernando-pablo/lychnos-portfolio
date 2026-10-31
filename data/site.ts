@@ -39,6 +39,18 @@ export type Projeto = {
 
 export const projetos: Projeto[] = [
   {
+    nome: "Pertim Shop",
+    problema:
+      "Pequenos comércios recebem pedidos pelo WhatsApp de um jeito bagunçado, com informação faltando e a conta feita na mão.",
+    solucao:
+      "Plataforma de pedidos que atende várias lojas num sistema só. Cada comércio tem o seu link e o seu visual, com carrinho, busca que entende erros de digitação e o pedido chegando pronto no WhatsApp. No painel, o lojista acompanha os pedidos e cuida dos produtos e do estoque. Faça um pedido na demonstração e entre na área do lojista com um clique.",
+    tecnologias: ["Next.js", "Nest.js", "PostgreSQL", "Redis", "Docker"],
+    imagem: "/projetos/pertim-shop.jpg",
+    linkAoVivo: "https://pertim-shop.vercel.app",
+    rotuloLink: "Ver demonstração",
+    linkCodigo: "https://github.com/fernando-pablo/pertim-shop",
+  },
+  {
     nome: "Calendário digital para igrejas",
     problema:
       "A programação da igreja ficava espalhada em avisos e grupos, e os membros perdiam eventos importantes.",
@@ -50,6 +62,8 @@ export const projetos: Projeto[] = [
     selo: "Demonstração com dados fictícios. O app original é privado.",
     linkAoVivo: "https://calendario-igreja-demo-un3i.vercel.app",
     rotuloLink: "Ver demonstração",
+    // O código aberto é o da demonstração, não o do app da igreja.
+    linkCodigo: "https://github.com/fernando-pablo/calendario-igreja-demo",
   },
   {
     nome: "CheckPro 2.0",
@@ -60,6 +74,7 @@ export const projetos: Projeto[] = [
     tecnologias: ["React", "Vite", "React Router", "Gráficos SVG", "SheetJS (Excel)"],
     imagem: "/projetos/checkpro.jpg",
     linkAoVivo: "https://checkpro-demo.vercel.app",
+    linkCodigo: "https://github.com/fernando-pablo/checkpro-demo",
   },
   {
     nome: "Modelo de site para clínicas",
@@ -70,6 +85,7 @@ export const projetos: Projeto[] = [
     tecnologias: ["Next.js", "TypeScript", "Tailwind CSS", "SEO"],
     imagem: "/projetos/clinica.jpg",
     linkAoVivo: "https://modelo-site-clinicas.vercel.app",
+    linkCodigo: "https://github.com/fernando-pablo/modelo-site-clinicas",
   },
 ];
 
@@ -116,7 +132,11 @@ export const tecnologias = [
   "TypeScript",
   "JavaScript",
   "Node.js",
+  "Nest.js",
   "Supabase",
+  "PostgreSQL",
+  "Redis",
+  "Docker",
   "Tailwind CSS",
   "Vite",
   "PWA",
